@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор программы Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+    <header class="page-header">
+        <nav сlass="main-navigation">
+            <a class="main-navigation__logo" href="index.html">
+                <svg class="main-navigation__logo-icon" width="33" height="38">
+                    <use xlink:href=""></use>
+                </svg>
+                <svg class="main-navigation__logo-icon" width="101" height="18">
+                    <use xlink:href=""></use>
+                </svg>
+                <span class="visually-hidden">Логотип Кэт-энерджи.</span>
+            </a>
+            <button class="main-navigation__toggle" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link">Подбор программы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="page-main__form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <fieldset class="page-main__form-group">
+                <legend class="visually-hidden">Данные вашего кота.</legend>
+                <label class="page-main__form-label">Имя:*
+                    <input class="page-main__form-input" type="text" name="name" placeholder="Барсик" required>
+                </label>
+                <label class="page-main__form-label">Вес(кг):*
+                    <input class="page-main__form-input" type="number" name="weight" placeholder="7" required>
+                </label>
+                <label class="page-main__form-label">Возраст(лет):
+                    <input class="page-main__form-input" type="number" name="old" placeholder="7">
+                </label>
+            </fieldset>
+            <fieldset class="page-main__form-group">
+                <legend class="visually-hidden">Тип программы.</legend>
+                <ul class="page-main__form-list">
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="radio" name="type-group" value="slim" checked>
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Похудение</span>
+                        </label>
+                    </li>
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="radio" name="type-group" value="pro">
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Набор массы</span>
+                        </label>
+                    </li>
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="radio" name="type-group" value="unknown">
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Не знаю (нужен ваш совет)</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="page-main__form-group">
+                <legend class="page-main__form-title">Контактные данные (владельца кота)</legend>
+                <label class="page-main__form-label">E-MAIL:*
+                    <input type="page-main__form-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <svg class="page-main__form-icon" width="18" height="13">
+                        <use xlink:href=""></use>
+                    </svg>
+                </label>
+                <label class="page-main__form-label">Телефон:*
+                    <input type="page-main__form-input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                    <svg class="page-main__form-icon" width="20" height="20">
+                        <use xlink:href=""></use>
+                    </svg>
+                </label>
+            </fieldset>
+            <fieldset class="page-main__form-group">
+                <label class="page-main__form-label page-main__form-label-title">Коментарий
+                    <textarea class="page-main__form-comment" name="form-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
+            </fieldset>
+            <fieldset class="page-main__form-group">
+                <legend class="page-main__form-title">Дополнительно</legend>
+                <ul class="page-main__form-list">
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="checkbox" name="nosugar" checked>
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Сахарозаменитель</span>
+                        </label>
+                    </li>
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="checkbox" name="water">
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Питьевая вода</span>
+                        </label>
+                    </li>
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="checkbox" name="milk">
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Молоко</span>
+                        </label>
+                    </li>
+                    <li class="page-main__form-item">
+                        <label class="page-main__control">
+                            <input class="visually-hidden page-main__control-input" type="checkbox" name="vitamins">
+                            <span class="page-main__control-mark"></span>
+                            <span class="page__main__control-label">Витамины</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="page-main__form-button" type="submit">Отправить заявку</button>
+            <p class="page-main__form-legend">* — Обязательные поля</p>
+        </form>
+        <section class="partnership">
+            <div class="partnership__wrapper">
+                <h2 class="partnership__title">приглашаем к сотрудничеству дилеров!</h2>
+                <address class="parntership__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            </div>
+            <div class="partnership__map"></div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <a class="page-footer__logo" href="index.html">
+            <svg class="page-footer__logo-icon" height="24" width="128">
+                <use xlink:href=""></use>
+            </svg>
+            <span class="visually-hidden">Логотип-надпись Кэт-энерджи.</span>
+        </a>
+        <div class="page-footer__social">
+            <ul class="page-footer__social-list">
+                <li class="page-footer__social-item">
+                    <a class="page-footer__social-link page-footer__social-link--vk" href="https://vk.com/htmlacademy">
+                        <svg class="page-footer__social-icon page-footer__social-icon--vk" height="16" width="23">
+                            <use xlink:href=""></use>
+                        </svg>
+                        <span class="visually-hidden">Вконтакте.</span>
+                    </a>
+                </li>
+                <li class="page-footer__social-item">
+                    <a class="page-footer__social-link page-footer__social-link--instagram"
+                        href="https://www.instagram.com/htmlacademy/">
+                        <svg class="page-footer__social-icon page-footer__social-icon--instagram" height="16" width="16">
+                            <use xlink:href=""></use>
+                        </svg>
+                        <span class="visually-hidden">Инстаграм.</span>
+                    </a>
+                </li>
+                <li class="page-footer__social-item">
+                    <a class="page-footer__social-link page-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
+                        <svg class="page-footer__social-icon page-footer__social-icon--facebook" height="16" width="16">
+                            <use xlink:href=""></use>
+                        </svg>
+                        <span class="visually-hidden">Фейсбук.</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__about">
+            <a class="page-footer__about-link" href="https://htmlacademy.ru/">
+                <span class="page-footer__about-text">HTML Academy</span>
+                <svg class="page-footer__about-icon" height="34" width="27">
+                    <use xlink:href=""></use>
+                </svg>
+                <span class="visually-hidden">Логотип HTML-академии.</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
