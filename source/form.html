@@ -39,101 +39,101 @@
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
     <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="container-content" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="container-content__group">
+    <form class="choice-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="choice-form__group">
         <legend class="visually-hidden">Данные вашего кота.</legend>
-        <label class="container-content__label">Имя:*
-          <input class="container-content__input" type="text" name="name" placeholder="Барсик" required>
+        <label class="choice-form__label">Имя:*
+          <input class="choice-form__input" type="text" name="name" placeholder="Барсик" required>
         </label>
-        <label class="container-content__label">Вес(кг):*
-          <input class="container-content__input" type="number" name="weight" placeholder="7" required>
+        <label class="choice-form__label">Вес(кг):*
+          <input class="choice-form__input" type="number" name="weight" placeholder="7" required>
         </label>
-        <label class="container-content__label">Возраст(лет):
-          <input class="container-content__input" type="number" name="old" placeholder="7">
+        <label class="choice-form__label">Возраст(лет):
+          <input class="choice-form__input" type="number" name="old" placeholder="7">
         </label>
       </fieldset>
-      <fieldset class="container-content__group">
+      <fieldset class="choice-form__group">
         <legend class="visually-hidden">Тип программы.</legend>
-        <ul class="container-content__list">
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content__control-input" type="radio" name="type-group" value="slim"
+        <ul class="choice-form__list">
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form__control-input" type="radio" name="type-group" value="slim"
                 checked>
-              <span class="container-content__control-mark"></span>
-              <span class="container-content__control-label">Похудение</span>
+              <span class="choice-form__control-mark"></span>
+              <span class="choice-form__control-label">Похудение</span>
             </label>
           </li>
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content__control-input" type="radio" name="type-group" value="pro">
-              <span class="container-content__control-mark"></span>
-              <span class="container-content__control-label">Набор массы</span>
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form__control-input" type="radio" name="type-group" value="pro">
+              <span class="choice-form__control-mark"></span>
+              <span class="choice-form__control-label">Набор массы</span>
             </label>
           </li>
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content__control-input" type="radio" name="type-group" value="unknown">
-              <span class="container-content__control-mark"></span>
-              <span class="container-content__control-label">Не знаю (нужен ваш совет)</span>
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form__control-input" type="radio" name="type-group" value="unknown">
+              <span class="choice-form__control-mark"></span>
+              <span class="choice-form__control-label">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="container-content__group">
-        <legend class="container-content__title">Контактные данные (владельца кота)</legend>
-        <label class="container-content__label">E-MAIL:*
-          <input type="container-content__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-          <svg class="container-content__icon" width="18" height="13">
+      <fieldset class="choice-form__group">
+        <legend class="choice-form__title">Контактные данные (владельца кота)</legend>
+        <label class="choice-form__label">E-MAIL:*
+          <input type="choice-form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <svg class="choice-form__icon" width="18" height="13">
             <use xlink:href=""></use>
           </svg>
         </label>
-        <label class="container-content__label">Телефон:*
-          <input type="container-content__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-          <svg class="container-content__icon" width="20" height="20">
+        <label class="choice-form__label">Телефон:*
+          <input type="choice-form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          <svg class="choice-form__icon" width="20" height="20">
             <use xlink:href=""></use>
           </svg>
         </label>
       </fieldset>
-      <fieldset class="container-content__group">
-        <legend class="container-content__title">Коментарий
-          <textarea class="container-content__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="choice-form__group">
+        <legend class="choice-form__title">Коментарий
+          <textarea class="choice-form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </legend>
       </fieldset>
-      <fieldset class="container-content__group">
-        <legend class="container-content__title">Дополнительно</legend>
-        <ul class="container-content__list">
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content__control-input" type="checkbox" name="nosugar" checked>
-              <span class="container-content__control-mark"></span>
-              <span class="container-content__control-label">Сахарозаменитель</span>
+      <fieldset class="choice-form__group">
+        <legend class="choice-form__title">Дополнительно</legend>
+        <ul class="choice-form__list">
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form__control-input" type="checkbox" name="nosugar" checked>
+              <span class="choice-form__control-mark"></span>
+              <span class="choice-form__control-label">Сахарозаменитель</span>
             </label>
           </li>
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content_control-input" type="checkbox" name="water">
-              <span class="container-content_control-mark"></span>
-              <span class="container-content__control-label">Питьевая вода</span>
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form_control-input" type="checkbox" name="water">
+              <span class="choice-form_control-mark"></span>
+              <span class="choice-form__control-label">Питьевая вода</span>
             </label>
           </li>
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content__control-input" type="checkbox" name="milk">
-              <span class="container-content__control-mark"></span>
-              <span class="container-content__control-label">Молоко</span>
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form__control-input" type="checkbox" name="milk">
+              <span class="choice-form__control-mark"></span>
+              <span class="choice-form__control-label">Молоко</span>
             </label>
           </li>
-          <li class="container-content__item">
-            <label class="container-content__control">
-              <input class="visually-hidden container-content__control-input" type="checkbox" name="vitamins">
-              <span class="container-content__control-mark"></span>
-              <span class="container-content__control-label">Витамины</span>
+          <li class="choice-form__item">
+            <label class="choice-form__control">
+              <input class="visually-hidden choice-form__control-input" type="checkbox" name="vitamins">
+              <span class="choice-form__control-mark"></span>
+              <span class="choice-form__control-label">Витамины</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="container-content__button" type="submit">Отправить заявку</button>
-      <p class="container-content__caption">* — Обязательные поля</p>
+      <button class="choice-form__button" type="submit">Отправить заявку</button>
+      <p class="choice-form__caption">* — Обязательные поля</p>
     </form>
     <section class="partnership">
       <div class="partnership__wrapper">
