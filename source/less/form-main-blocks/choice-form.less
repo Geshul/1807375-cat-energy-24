@@ -1,0 +1,100 @@
+.choice-form {
+  &__group {
+    font-size: 16px;
+    line-height: 18px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__group--radio {
+    margin-top: 60px;
+  }
+
+  &__input {
+    text-transform: uppercase;
+    font: inherit;
+    background-color: transparent;
+    outline: 1px solid @basic-grey;
+    border: none;
+  }
+
+  &__input::placeholder {
+    color: @special-dark-grey;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    color: @special-darkest-grey;
+    margin-bottom: 12px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    color: @basic-black;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0;
+    padding-top: 23px;
+    padding-bottom: 35px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__textarea {
+    margin-top: 37px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    min-height: 150px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+  }
+
+  &__textarea::placeholder {
+    color: @special-dark-grey;
+  }
+
+  &__conrol-label {
+    color: @basic-black;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 20px;
+    color: @basic-white;
+    background-color: @basic-green;
+    text-transform: uppercase;
+    border: none;
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    cursor: pointer;
+    margin-top: 34px;
+    margin-bottom: 28px;
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 16px;
+    color: @basic-black;
+    font-family: "Arial", "Helvetica", sans-serif;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
