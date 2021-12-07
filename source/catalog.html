@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог продукции Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -202,9 +203,9 @@
           <button class="catalog-item__button" type="button">Заказать</button>
         </li>
         <li class="catalog-item">
-          <h2 class="catalog-item__inner-title">Показать еще 100500 товаров</h2>
+          <h2 class="catalog-item__inner-title catalog-item__inner-title--show-more">Показать еще 100500 товаров</h2>
           <p class="catalog-item__inner-text">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog-item__button" type="button">показать все</button>
+          <button class="catalog-item__button catalog-item__button--show-more" type="button">показать все</button>
         </li>
       </ul>
     </section>
@@ -212,7 +213,7 @@
       <h2 class="сatalog-optional__title">Дополнительные товары</h2>
       <ul class="сatalog-optional__items">
         <li class="сatalog-optional__item">
-          <h3 class="сatalog-optional__title">Сахарозаменитель</h3>
+          <h3 class="сatalog-optional__inner-title">Сахарозаменитель</h3>
           <table class="catalog-optional__stats">
             <tr class="catalog-optional__stats-row">
               <td class="catalog-optional__stats-title">1 упаковка (100 г)</td>
@@ -222,7 +223,7 @@
           <button class="сatalog-optional__button" type="button">Заказать</button>
         </li>
         <li class="сatalog-optional__item">
-          <h3 class="сatalog-optional__title">питьевая вода</h3>
+          <h3 class="сatalog-optional__inner-title">питьевая вода</h3>
           <table class="catalog-optional__stats">
             <tr class="catalog-optional__stats-row">
               <td class="catalog-optional__stats-title">5 литров</td>
@@ -232,7 +233,7 @@
           <button class="сatalog-optional__button" type="button">Заказать</button>
         </li>
         <li class="сatalog-optional__item">
-          <h3 class="сatalog-optional__title">молоко</h3>
+          <h3 class="сatalog-optional__inner-title">молоко</h3>
           <table class="catalog-optional__stats">
             <tr class="catalog-optional__stats-row">
               <td class="catalog-optional__stats-title">1 литр</td>
@@ -242,7 +243,7 @@
           <button class="сatalog-optional__button" type="button">Заказать</button>
         </li>
         <li class="сatalog-optional__item">
-          <h3 class="сatalog-optional__title">витамины</h3>
+          <h3 class="сatalog-optional__inner-title">витамины</h3>
           <table class="catalog-optional__stats">
             <tr class="catalog-optional__stats-row">
               <td class="catalog-optional__stats-title">1 упаковка (30 г)</td>
@@ -254,13 +255,17 @@
       </ul>
     </section>
     <section class="present">
-      <img class="present__image" src="img/catalog/optional/gift-icon.svg" height="80" width="78">
-      <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="present__wrapper">
+        <div class="present__background-wrapper">
+          <img class="present__image" src="img/catalog/present/gift-icon.svg" height="80" width="78">
+          <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+    </div>
     </section>
-    <section class="partnership">
+    <section class="partnership partnership--other">
       <div class="partnership__wrapper">
         <h2 class="partnership__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="parntership__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="partnership__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="partnership__map"></div>
     </section>

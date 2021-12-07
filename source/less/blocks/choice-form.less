@@ -1,0 +1,95 @@
+.choice-form__group {
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &--radio {
+    margin-top: 60px;
+  }
+}
+
+.choice-form__input {
+  text-transform: uppercase;
+  font: inherit;
+  background-color: transparent;
+  outline: 1px solid @basic-grey;
+  border: none;
+
+  &::placeholder {
+    color: @special-dark-grey;
+  }
+}
+
+.choice-form__item {
+  text-transform: uppercase;
+  color: @special-darkest-grey;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
+}
+
+.choice-form__title {
+  color: @basic-black;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  padding: 23px 0 35px 0;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+.choice-form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.choice-form__label {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.choice-form__textarea {
+  margin-top: 37px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  min-height: 150px;
+  letter-spacing: -1px;
+  word-spacing: -5px;
+
+  &::placeholder {
+    color: @special-dark-grey;
+  }
+}
+
+.choice-form__control-label {
+  color: @basic-black;
+}
+
+.choice-form__button {
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic-white;
+  background-color: @basic-green;
+  text-transform: uppercase;
+  border: none;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  cursor: pointer;
+  margin: 34px 0 28px 0;
+}
+
+.choice-form__caption {
+  font-size: 14px;
+  line-height: 16px;
+  color: @basic-black;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin: 0 0 32px 0;
+}
