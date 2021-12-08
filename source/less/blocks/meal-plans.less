@@ -2,13 +2,21 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .meal-plans__item {
   background-color: @basic-grey;
   display: flex;
-  margin-bottom: 38px;
+  margin: 0 auto 38px auto;
   flex-direction: column;
+  width: 92%;
+  min-height: 372px;
 }
 
 .meal-plans__title {

@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .page-footer__about-link {
@@ -21,4 +25,8 @@
 
 .page-footer__about {
   padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }

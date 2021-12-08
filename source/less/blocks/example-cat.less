@@ -1,5 +1,19 @@
 .example-cat {
   background-color: @basic-grey;
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 1038px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 641px;
+  }
 }
 
 .example-cat__title {

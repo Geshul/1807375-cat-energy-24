@@ -1,12 +1,28 @@
 .search {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-height: 410px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 810px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 694px;
+  }
+
+  .content-wrapper {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 .search__title {
   font-size: 36px;
   line-height: 36px;
-  color: @basic-white;
   padding: 27px 0 25px 0;
   margin: 0 auto;
 }
@@ -16,13 +32,23 @@
   font-size: 14px;
   line-height: 14px;
   padding-bottom: 29px;
-  color: @basic-white;
 }
 
 .search__background-wrapper {
   background-color: @special-green-light;
   z-index: 1;
   height: 100%;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+    color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @special-green-light;
+    color: @basic-white;
+  }
 }
 
 .search__wrapper {
@@ -31,6 +57,14 @@
   background-size: cover;
   height: 302px;
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index/search/background-cat-image.jpg");
+  }
 }
 
 .search__link {
@@ -40,4 +74,5 @@
   background-color: @basic-green;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 20px;
 }
