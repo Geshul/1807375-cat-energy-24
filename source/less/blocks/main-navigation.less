@@ -11,17 +11,14 @@
   color: @basic-black;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 440px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
     width: 478px;
   }
 }
@@ -29,12 +26,12 @@
 .main-navigation__item {
   padding: 24px 0 24px 0;
 
-  @media (min-width: @tablet-width) {
-    margin-right: 34px;
-  }
-
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 34px;
   }
 }
 
@@ -52,4 +49,3 @@
     display: none;
   }
 }
-

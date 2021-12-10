@@ -1,18 +1,12 @@
 .example-cat {
   background-color: @basic-grey;
+}
 
-  .content-wrapper {
+.example-cat__wrapper {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-  }
-
-  @media (min-width: @tablet-width) {
-    min-height: 1038px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 641px;
   }
 }
 
