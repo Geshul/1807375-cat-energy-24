@@ -2,10 +2,34 @@
   background-color: @basic-grey;
 }
 
+.page-footer__wrapper {
+  margin: 0 auto;
+  align-items: center;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
 .page-footer__social-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .page-footer__about-link {
@@ -21,4 +45,8 @@
 
 .page-footer__about {
   padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }

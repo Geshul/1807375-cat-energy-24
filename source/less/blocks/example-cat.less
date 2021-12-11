@@ -2,6 +2,14 @@
   background-color: @basic-grey;
 }
 
+.example-cat__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 .example-cat__title {
   font-size: 36px;
   line-height: 40px;
