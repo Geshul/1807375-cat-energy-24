@@ -1,3 +1,8 @@
+.page-main {
+  flex-grow: 1;
+  min-height: 100%;
+}
+
 .page-main__title {
   font-size: 36px;
   line-height: 36px;
@@ -5,12 +10,42 @@
   font-weight: 400;
   margin: 0;
   padding: 44px 0 37px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 0 54px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 67px 0 56px 0;
+  }
+
+  &--catalog {
+    padding: 74px 0 37px 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 64px 0 82px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 74px 0 84px 0;
+    }
+  }
 }
 
 .page-main__text {
+  width: 226px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: @basic-black;
   margin: 0 0 39px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 0 0 66px 0;
+  }
 }
