@@ -1,9 +1,10 @@
 .content-wrapper {
   margin: 0 auto;
-  align-items: center;
 
-  @media (min-width: @tablet-width) {
-    width: 708px;
+  @media (max-width: @mobile-only-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
