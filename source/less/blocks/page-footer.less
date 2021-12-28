@@ -5,11 +5,10 @@
 .page-footer__wrapper {
   margin: 0 auto;
   align-items: center;
-  width: 280px;
+  width: 88%;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -22,18 +21,80 @@
   }
 }
 
+.page-footer__social {
+  position: relative;
+
+  @media (max-width: @mobile-only-width) {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: @special-light-grey;
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      bottom: 0;
+    }
+  }
+}
+
 .page-footer__social-list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 20px 0 21px 0;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    &::before {
+      display: none;
+    }
   }
 }
 
 .page-footer__about-link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    gap: 22px;
+  }
+}
+
+.page-footer__social-icon:not(.page-footer__social-icon--facebook) {
+  fill: @dark-grey;
+}
+
+.page-footer__social-link:hover .page-footer__social-icon:not(.page-footer__social-icon--facebook) {
+  fill: @basic-green;
+}
+
+.page-footer__social-icon--facebook {
+  stroke: @dark-grey;
+}
+
+.page-footer__social-link:active .page-footer__social-icon {
+  opacity: 0.3;
+}
+
+.page-footer__social-link:hover .page-footer__social-icon--facebook {
+  stroke: @basic-green;
+}
+
+.page-footer__about-icon {
+  fill: @dark-grey;
+}
+
+.page-footer__about-link:hover .page-footer__about-icon {
+  fill: @basic-green;
+}
+
+.page-footer__about-link:active {
+  opacity: 0.3;
 }
 
 .page-footer__about-text {
@@ -44,9 +105,42 @@
 }
 
 .page-footer__about {
-  padding-bottom: 32px;
+  padding: 22px 0 22px 0;
 
   @media (min-width: @tablet-width) {
     order: 1;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  text-align: center;
+  padding: 39px 0 32px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 1px;
+    background-color: @special-light-grey;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 0 55px 0;
+
+    &::before {
+      display: none;
+    }
   }
 }
