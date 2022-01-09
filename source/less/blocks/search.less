@@ -1,21 +1,13 @@
 .search__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: -40px;
-
   @media (min-width: @tablet-width) {
-    margin-bottom: -53px;
+    width: 709px;
+    margin: 0 auto;
+    display: grid;
   }
 
-
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: static;
     width: 1220px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -23,10 +15,9 @@
   width: 249px;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 0 25px 0;
+  padding: 88px 0 25px 0;
   margin: 0 auto;
   font-weight: 400;
-
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -52,7 +43,7 @@
 
   @media (min-width: @tablet-width) {
     width: max-content;
-    padding-bottom: 20px;
+    padding-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -80,8 +71,9 @@
   background-size: cover;
   height: 302px;
   width: 100%;
-  position: relative;
+  position: absolute;
   top: 65px;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -95,29 +87,24 @@
     height: 694px;
     order: 3;
     top: 0;
-    left: 220px;
+    right: 0;
     margin-bottom: 82px;
+    z-index: 1;
   }
 }
 
 .search__text-wrapper {
   color: @basic-white;
   text-align: center;
-  position: absolute;
-  top: 65px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     color: @basic-black;
-    position: relative;
-    top: 0;
-    left: -78px;
-    margin-top: 132px;
+    margin: 0 0 0 87px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 190px;
-    top: -72px;
-    margin: 0;
+    margin: 224px 0 0 80px;
   }
 }
 
@@ -133,8 +120,7 @@
   background-color: @basic-green;
   font-size: 14px;
   line-height: 18px;
-  position: relative;
-  bottom: 60px;
+  margin: 0 auto 20px auto;
 
   &:hover {
     background-color: @special-green-dark;
@@ -148,35 +134,27 @@
   @media (min-width: @tablet-width) {
     width: 244px;
     height: 54px;
-    margin: 0;
-    position: relative;
-    top: -241px;
-    right: 163px;
+    margin: 0 0 0 87px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    order: -1;
-    top: 455px;
-    left: 190px;
+    margin: 0 0 0 80px;
   }
 }
 
 .search__image {
-  z-index: 1;
-  position: relative;
-  bottom: 60px;
+  display: block;
+  margin: 5px auto 0 auto;
 
   @media (min-width: @tablet-width) {
-    z-index: 0;
-    position: static;
+    z-index: -1;
+    order: 1;
+    margin: -72px auto 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 141px;
+    z-index: 1;
     margin: 0 auto;
+    transform: translate(50px, -300px);
   }
 }

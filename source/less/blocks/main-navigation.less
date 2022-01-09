@@ -1,12 +1,11 @@
 .main-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 88%;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding: 42px 0 0 0;
+    padding: 24px 0 0 0;
     width: 709px;
   }
 
@@ -23,7 +22,7 @@
   padding: 0;
   margin: 0;
   background-color: @basic-white;
-  z-index: 1;
+  z-index: 2;
 
   &--black .main-navigation__link {
     @media (min-width: @desktop-width) {
@@ -37,17 +36,12 @@
     left: 0;
     top: 65px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,7 +53,8 @@
   padding: 22px 0 24px 0;
   font-size: 20px;
   line-height: 20px;
-  width: 181px;
+  width: 100%;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -84,7 +79,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      margin-top: -22px;
+      bottom: 66px;
       height: 1px;
       background-color: @basic-grey;
       width: 100%;
@@ -143,7 +138,6 @@
   display: block;
   z-index: 2;
   cursor: pointer;
-  position: relative;
 
   @media (min-width: @tablet-width) {
     display: none;
