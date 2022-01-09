@@ -3,4 +3,16 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+
+  @media (max-width: @mobile-only-width) {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: @basic-grey;
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      top: 66px;
+    }
+  }
 }

@@ -1,7 +1,14 @@
+.present {
+  @media (min-width: @desktop-width) {
+    align-self: end;
+  }
+}
+
 .present__background-wrapper {
   background-color: @special-green-light;
   z-index: 1;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -28,6 +35,8 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     margin: 69px auto 76px auto;
+    background-size: cover;
+    background-position: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,8 +53,9 @@
   margin: 0;
   padding-bottom: 43px;
   width: 161px;
+  text-align: center;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
