@@ -28,63 +28,6 @@
     }
   }
 
-  &--show-more .catalog-item__inner-title {
-    color: @special-black;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto 8px auto;
-
-    @media (min-width: @tablet-width) {
-      width: 134px;
-      margin: 0 auto 23px auto;
-      line-height: 22px;
-    }
-
-    @media (min-width: @desktop-width) {
-      line-height: 24px;
-    }
-  }
-
-  &--show-more .catalog-item__button {
-    background-color: @basic-grey;
-    color: @special-dark-grey;
-    margin: 0 auto 25px auto;
-
-    &:hover {
-      background-color: @basic-light-grey;
-    }
-
-    &:active {
-      background-color: @basic-light-grey;
-      opacity: 0.3;
-    }
-
-    @media (min-width: @tablet-width) {
-      margin: 87px auto 38px auto;
-    }
-  }
-
-  &--show-more .catalog-item__inner-text {
-    text-align: center;
-
-    @media (min-width: @tablet-width) {
-      font-size: 16px;
-      line-height: 18px;
-      width: 167px;
-      margin: 0 auto;
-    }
-  }
-
-  &--show-more .catalog-item__image {
-    margin: 6px auto 23px auto;
-    order: -1;
-
-    @media (min-width: @tablet-width) {
-      margin: 52px auto 49px auto;
-      grid-column: 1 / 3;
-    }
-  }
-
   @media (max-width: @mobile-only-width) {
     margin-top: 19px;
 
@@ -104,7 +47,7 @@
   }
 }
 
-.catalog-item:not(.catalog-item--show-more) {
+.catalog-item:not(&--show-more) {
   @media (min-width: @tablet-width) {
     background-color: @basic-grey;
   }
@@ -123,6 +66,23 @@
   color: @special-darkest-grey;
   text-transform: uppercase;
   margin: 0 0 18px 0;
+
+  .catalog-item--show-more & {
+    color: @special-black;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 8px auto;
+
+    @media (min-width: @tablet-width) {
+      width: 134px;
+      margin: 0 auto 23px auto;
+      line-height: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      line-height: 24px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin: 34px auto 21px auto;
@@ -150,6 +110,25 @@
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   cursor: pointer;
   grid-column: 1 / 3;
+
+  .catalog-item--show-more & {
+    background-color: @basic-grey;
+    color: @special-dark-grey;
+    margin: 0 auto 25px auto;
+
+    &:hover {
+      background-color: @basic-light-grey;
+    }
+
+    &:active {
+      background-color: @basic-light-grey;
+      opacity: 0.3;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin: 87px auto 38px auto;
+    }
+  }
 
   &:hover {
     background-color: @special-green-dark;
@@ -214,6 +193,17 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0 0 21px 0;
+
+  .catalog-item--show-more & {
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      width: 167px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .catalog-item__image-wrapper {
@@ -240,6 +230,16 @@
 }
 
 .catalog-item__image {
+  .catalog-item--show-more & {
+    margin: 6px auto 23px auto;
+    order: -1;
+
+    @media (min-width: @tablet-width) {
+      margin: 52px auto 49px auto;
+      grid-column: 1 / 3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
   }

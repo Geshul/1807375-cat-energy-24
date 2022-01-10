@@ -60,41 +60,43 @@
   justify-content: space-between;
   align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     gap: 22px;
   }
 }
 
-.page-footer__social-icon:not(.page-footer__social-icon--facebook) {
-  fill: @dark-grey;
-}
+.page-footer__social-icon {
+  &:not(&--facebook) {
+    fill: @dark-grey;
+  }
 
-.page-footer__social-link:hover .page-footer__social-icon:not(.page-footer__social-icon--facebook) {
-  fill: @basic-green;
-}
+  &--facebook {
+    stroke: @dark-grey;
+  }
 
-.page-footer__social-icon--facebook {
-  stroke: @dark-grey;
-}
+  .page-footer__social-link:hover &:not(&--facebook) {
+    fill: @basic-green;
+  }
 
-.page-footer__social-link:active .page-footer__social-icon {
-  opacity: 0.3;
-}
+  .page-footer__social-link:active & {
+    opacity: 0.3;
+  }
 
-.page-footer__social-link:hover .page-footer__social-icon--facebook {
-  stroke: @basic-green;
+  .page-footer__social-link:hover &--facebook {
+    stroke: @basic-green;
+  }
 }
 
 .page-footer__about-icon {
   fill: @dark-grey;
-}
 
-.page-footer__about-link:hover .page-footer__about-icon {
-  fill: @basic-green;
-}
-
-.page-footer__about-link:active {
-  opacity: 0.3;
+  .page-footer__about-link:hover & {
+    fill: @basic-green;
+  }
 }
 
 .page-footer__about-text {

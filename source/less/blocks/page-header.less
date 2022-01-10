@@ -4,6 +4,12 @@
   right: 0;
   margin: 0 auto;
 
+  &--index::before {
+    @media (max-width: @mobile-only-width) {
+      display: none;
+    }
+  }
+
   @media (max-width: @mobile-only-width) {
     &::before {
       content: "";
