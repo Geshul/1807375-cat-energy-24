@@ -3,5 +3,22 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: @basic-white;
+
+  &--index::before {
+    @media (max-width: @mobile-only-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: @mobile-only-width) {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: @basic-grey;
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      top: 66px;
+    }
+  }
 }
