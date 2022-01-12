@@ -64,6 +64,7 @@
     margin-right: 34px;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
     width: fit-content;
     padding: 0;
   }
@@ -166,6 +167,7 @@
 
   &:hover {
     opacity: 0.8;
+    cursor: pointer;
   }
 
   &:active {
@@ -173,8 +175,20 @@
   }
 }
 
-.main-navigation__logo-icon:first-child {
-  margin: 10px 0 17px 0;
+.main-navigation__logo-icon {
+  &--picture {
+    margin: 10px 0 17px 0;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &--word {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .main-navigation--opened .main-navigation__icon {
