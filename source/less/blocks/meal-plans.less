@@ -212,25 +212,25 @@
   color: @basic-black;
   text-transform: uppercase;
   margin-right: 17px;
+  width: 100%;
+  background-image: url("/img/index/meal-plans/arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 100px;
+
+  .meal-plans__link:hover & {
+    background-image: url("/img/index/meal-plans/arrow-icon-tall.svg");
+  }
+
+  .meal-plans__link:active & {
+    background-image: url("/img/index/meal-plans/arrow-icon-tall.svg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 25px;
+    background-position: 133px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 28px;
-  }
-}
-
-.meal-plans__link-icon {
-  position: relative;
-  top: 1px;
-
-  @media (min-width: @tablet-width) {
-    top: 10px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 9px;
   }
 }
