@@ -24,7 +24,8 @@
         <span class="visually-hidden">Логотип Кэт-энерджи.</span>
       </a>
       <button class="main-navigation__toggle" type="button">
-        <svg class="main-navigation__icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/><line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/><line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+        <svg class="main-navigation__icon" width="24" height="18">
+          <use href="img/sprite.svg#icon-menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -54,6 +55,10 @@
           <p class="search__text">Занялся собой? Займись котом!</p>
         </div>
         <picture>
+          <source media="(min-width: 1440px)" type="image/webp" srcset="img/index/search/can-picture-medium-w.webp 1x" height="499" width="552">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/index/search/can-picture-big-w.webp 1x" height="609" width="709">
+          <source media="(max-width: 767px)" type ="image/webp" srcset="img/index/search/can-picture-w.webp 1x" height="270" width="280">
+
           <source media="(min-width: 1440px)" srcset="img/index/search/can-picture-medium.png, img/index/search/can-picture-medium@2x.png 2x" height="499" width="552" alt="Банка с питанием Кэт-энерджи.">
           <source media="(min-width: 768px)" srcset="img/index/search/can-picture-big.png, img/index/search/can-picture-big@2x.png 2x" height="609" width="709" alt="Банка с питанием Кэт-энерджи.">
           <img class="search__image" src="img/index/search/can-picture.png" height="270" width="280" alt="Банка с питанием Кэт-энерджи." srcset="img/index/search/can-picture@2x.png 2x">
@@ -73,7 +78,7 @@
             <p class="meal-plans__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="meal-plans__link" href="form.html">
               <span class="meal-plans__link-text">Каталог slim</span>
-              <svg class="meal-plans__link-icon" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/><path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/></svg>
+              <span class="visually-hidden">Перейти на страницу каталога с товарами Slim.</span>
             </a>
           </li>
           <li class="meal-plans__item">
@@ -84,7 +89,7 @@
             <p class="meal-plans__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="meal-plans__link" href="form.html">
               <span class="meal-plans__link-text">Каталог pro</span>
-              <svg class="meal-plans__link-icon" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/><path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/></svg>
+              <span class="visually-hidden">Перейти на страницу каталога с товарами Pro.</span>
             </a>
           </li>
         </ul>
