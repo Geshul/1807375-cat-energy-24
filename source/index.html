@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon32.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -25,7 +25,7 @@
       </a>
       <button class="main-navigation__toggle" type="button">
         <svg class="main-navigation__icon" width="24" height="18">
-          <use href="img/sprite.svg#icon-menu"></use>
+          <use href="img/sprite.svg#button-menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -55,9 +55,9 @@
           <p class="search__text">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" type="image/webp" srcset="img/index/search/can-picture-medium-w.webp 1x" height="499" width="552">
-          <source media="(min-width: 768px)" type="image/webp" srcset="img/index/search/can-picture-big-w.webp 1x" height="609" width="709">
-          <source media="(max-width: 767px)" type ="image/webp" srcset="img/index/search/can-picture-w.webp 1x" height="270" width="280">
+          <source media="(min-width: 1440px)" type="image/webp" srcset="img/index/search/can-picture-medium.webp 1x, img/index/search/can-picture-medium@2x.webp 2x" height="499" width="552">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/index/search/can-picture-big.webp 1x, img/index/search/can-picture-big@2x.webp 2x" height="609" width="709">
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/index/search/can-picture.webp 1x, img/index/search/can-picture@2x.webp 2x" height="270" width="280">
 
           <source media="(min-width: 1440px)" srcset="img/index/search/can-picture-medium.png, img/index/search/can-picture-medium@2x.png 2x" height="499" width="552" alt="Банка с питанием Кэт-энерджи.">
           <source media="(min-width: 768px)" srcset="img/index/search/can-picture-big.png, img/index/search/can-picture-big@2x.png 2x" height="609" width="709" alt="Банка с питанием Кэт-энерджи.">
@@ -157,10 +157,16 @@
         <p class="example-cat__title-text">Затраты на питание: <span class="example-cat__price">15 000 руб.</span></p>
         <div class="example-cat__image-wrapper">
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/index/example-cat/fat-cat-image-big.webp, img/index/example-cat/fat-cat-image-big@2x.webp 2x" height="511" width="677">
+            <source media="(max-width: 767px)" type ="image/webp" srcset="img/index/example-cat/fat-cat-image.webp 1x, img/index/example-cat/fat-cat-image@2x.webp 2x" height="232" width="280">
+
             <source media="(min-width: 768px)" srcset="img/index/example-cat/fat-cat-image-big.png, img/index/example-cat/fat-cat-image-big@2x.png 2x" height="511" width="677" alt="Фотография толстого кота.">
             <img class="example-cat__image example-cat__image--fat" height="232" width="280" src="img/index/example-cat/fat-cat-image.png" alt="Фотография толстого кота." srcset="img/index/example-cat/fat-cat-image@2x.png 2x">
           </picture>
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/index/example-cat/thick-cat-image-big.webp, img/index/example-cat/thick-cat-image-big@2x.webp 2x" height="511" width="545">
+            <source media="(max-width: 767px)" type ="image/webp" srcset="img/index/example-cat/thick-cat-image.webp 1x, img/index/example-cat/thick-cat-image@2x.webp 2x" height="232" width="243">
+
             <source media="(min-width: 768px)" srcset="img/index/example-cat/thick-cat-image-big.png, img/index/example-cat/thick-cat-image-big@2x.png 2x" height="511" width="545" alt="Фотография худого кота.">
             <img class="example-cat__image example-cat__image--thick" height="232" width="243" src="img/index/example-cat/thick-cat-image.png" alt="Фотография худого кота." srcset="img/index/example-cat/thick-cat-image@2x.png 2x">
           </picture>

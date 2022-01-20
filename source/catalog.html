@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог продукции Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon32.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -26,7 +26,7 @@
       </a>
       <button class="main-navigation__toggle" type="button">
         <svg class="main-navigation__icon" width="24" height="18">
-          <use href="img/sprite.svg#icon-menu"></use>
+          <use href="img/sprite.svg#button-menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -51,6 +51,9 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-pro-chicken-small-large.webp 1x, img/catalog/content/can-pro-chicken-small-large@2x.webp 2x" width="161" height="172">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-pro-chicken-small.webp 1x, img/catalog/content/can-pro-chicken-small@2x.webp 2x" height="86" width="68">
+
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-pro-chicken-small-large.png, img/catalog/content/can-pro-chicken-small-large@2x.png 2x" width="161" height="172" alt="Небольшая банка, вкус курица.">
                 <img class="catalog-item__image catalog-item__image--small" src="img/catalog/content/can-pro-chicken-small.png" height="86" width="68" alt="Небольшая банка, вкус курица." srcset="img/catalog/content/can-pro-chicken-small@2x.png 2x">
               </picture>
@@ -77,6 +80,10 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/content/can-pro-chicken-big-large.webp 1x, img/catalog/content/can-pro-chicken-big-large@2x.webp 2x" width="172" height="202">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-pro-chicken-big-large.webp 1x, img/catalog/content/can-pro-chicken-big-large@2x.webp 2x" width="172" height="202">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-pro-chicken-big.webp 1x, img/catalog/content/can-pro-chicken-big@2x.webp 2x" height="100" width="84">
+
                 <source media="(min-width: 1440px)" srcset="img/catalog/content/can-pro-chicken-big-large.png, img/catalog/content/can-pro-chicken-big-large@2x.png 2x" width="172" height="202"  alt="Большая банка, вкус курица.">
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-pro-chicken-big-large.png, img/catalog/content/can-pro-chicken-big-large@2x.png 2x" width="168" height="206"  alt="Большая банка, вкус курица.">
                 <img class="catalog-item__image catalog-item__image--big" src="img/catalog/content/can-pro-chicken-big.png" height="100" width="84" alt="Большая банка, вкус курица." srcset="img/catalog/content/can-pro-chicken-big@2x.png 2x">
@@ -104,6 +111,9 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-pro-fish-small-large.webp 1x, img/catalog/content/can-pro-fish-small-large@2x.webp 2x" width="163" height="174">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-pro-fish-small.webp 1x, img/catalog/content/can-pro-fish-small@2x.webp 2x" height="78" width="68">
+
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-pro-fish-small-large.png, img/catalog/content/can-pro-fish-small-large@2x.png 2x" width="163" height="174" alt="Небольшая банка, вкус рыба.">
                 <img class="catalog-item__image catalog-item__image--small" src="img/catalog/content/can-pro-fish-small.png" height="78" width="68" alt="Небольшая банка, вкус рыба." srcset="img/catalog/content/can-pro-fish-small@2x.png 2x">
               </picture>
@@ -130,6 +140,10 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/content/can-pro-fish-big-large.webp 1x, img/catalog/content/can-pro-fish-big-large@2x.webp 2x" width="172" height="196">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-pro-fish-big-large.webp 1x, img/catalog/content/can-pro-fish-big-large@2x.webp 2x" width="168" height="200">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-pro-fish-big.webp 1x, img/catalog/content/can-pro-fish-big@2x.webp 2x" height="100" width="84">
+
                 <source media="(min-width: 1440px)" srcset="img/catalog/content/can-pro-fish-big-large.png, img/catalog/content/can-pro-fish-big-large@2x.png 2x" width="172" height="196"  alt="Большая банка, вкус рыба.">
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-pro-fish-big-large.png, img/catalog/content/can-pro-fish-big-large@2x.png 2x" width="168" height="200"  alt="Большая банка, вкус рыба.">
                 <img class="catalog-item__image catalog-item__image--big" src="img/catalog/content/can-pro-fish-big.png" height="100" width="84" alt="Большая банка, вкус рыба." srcset="img/catalog/content/can-pro-fish-big@2x.png 2x">
@@ -157,6 +171,9 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-slim-wheat-small-large.webp 1x, img/catalog/content/can-slim-wheat-small-large@2x.webp 2x" width="161" height="171">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-slim-wheat-small.webp 1x, img/catalog/content/can-slim-wheat-small@2x.webp 2x" height="78" width="68">
+
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-slim-wheat-small-large.png, img/catalog/content/can-slim-wheat-small-large@2x.png 2x" width="161" height="171" alt="Небольшая банка, вкус гречка.">
                 <img class="catalog-item__image catalog-item__image--small" src="img/catalog/content/can-slim-wheat-small.png" height="78" width="68" alt="Небольшая банка, вкус гречка." srcset="img/catalog/content/can-slim-wheat-small@2x.png 2x">
               </picture>
@@ -183,6 +200,10 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/content/can-slim-wheat-big-large.webp 1x, img/catalog/content/can-slim-wheat-big-large@2x.webp 2x" width="172" height="196">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-slim-wheat-big-large.webp 1x, img/catalog/content/can-slim-wheat-big-large@2x.webp 2x" width="168" height="200">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-slim-wheat-big.webp 1x, img/catalog/content/can-slim-wheat-big@2x.webp 2x" height="100" width="84">
+
                 <source media="(min-width: 1440px)" srcset="img/catalog/content/can-slim-wheat-big-large.png, img/catalog/content/can-slim-wheat-big-large@2x.png 2x" width="172" height="196"  alt="Большая банка, вкус гречка.">
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-slim-wheat-big-large.png, img/catalog/content/can-slim-wheat-big-large@2x.png 2x" width="168" height="200"  alt="Большая банка, вкус гречка.">
                 <img class="catalog-item__image catalog-item__image--big" src="img/catalog/content/can-slim-wheat-big.png" height="100" width="84" alt="Большая банка, вкус гречка." srcset="img/catalog/content/can-slim-wheat-big@2x.png 2x">
@@ -210,6 +231,9 @@
           <li class="catalog-item">
             <a class="catalog-item__image-wrapper" href="#">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/content/can-slim-rice-small-large.webp 1x, img/catalog/content/can-slim-rice-small-large@2x.webp 2x" width="163" height="174">
+                <source media="(max-width: 767px)" type ="image/webp" srcset="img/catalog/content/can-slim-rice-small.webp 1x, img/catalog/content/can-slim-rice-small@2x.webp 2x" height="84" width="72">
+
                 <source media="(min-width: 768px)" srcset="img/catalog/content/can-slim-rice-small-large.png, img/catalog/content/can-slim-rice-small-large@2x.png 2x" width="163" height="174" alt="Небольшая банка, вкус рис.">
                 <img class="catalog-item__image catalog-item__image--small" src="img/catalog/content/can-slim-rice-small.png" height="84" width="72" alt="Небольшая банка, вкус рис." srcset="img/catalog/content/can-slim-rice-small@2x.png 2x">
               </picture>
