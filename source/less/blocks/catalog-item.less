@@ -261,3 +261,21 @@
     }
   }
 }
+
+.catalog-item__inner-link {
+  text-decoration: none;
+  color: @special-black-dark;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

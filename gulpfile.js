@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -25,7 +26,7 @@ export const styles = () => {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
-}
+};
 
 // HTML
 
@@ -33,15 +34,16 @@ const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build/'))
-}
+};
 
 // Scripts
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
-}
+};
 
 // Images
 
@@ -49,12 +51,12 @@ const images = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
-}
+};
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(gulp.dest('build/img'))
-}
+};
 
 // WebP
 
@@ -64,14 +66,15 @@ const webp = () => {
       webp: {}
     }))
     .pipe(gulp.dest('build/img'))
-}
+};
 
 // SVG
 
-const svg = () =>
-  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg'])
+const svg = () => {
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
+};
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
@@ -81,7 +84,7 @@ const sprite = () => {
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
-}
+};
 
 // Copy
 
@@ -93,7 +96,7 @@ const copy = (done) => {
   })
     .pipe(gulp.dest('build'))
   done();
-}
+};
 
 // Clean
 
@@ -114,7 +117,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 // Watcher
 
@@ -122,7 +125,7 @@ const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
-}
+};
 
 // Build
 
