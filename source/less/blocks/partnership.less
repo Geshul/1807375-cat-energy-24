@@ -8,6 +8,7 @@
 
 .partnership__wrapper {
   display: grid;
+  justify-content: center;
   grid-template-columns: 139px 139px;
   padding: 26px 0 26px 0;
 
@@ -29,12 +30,9 @@
 }
 
 .partnership__container {
-  width: 88%;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-    display: grid;
-  }
+  width: 100%;
+  display: block;
+  margin: 0;
 
   @media (min-width: @desktop-width) {
     min-width: @desktop-width;
