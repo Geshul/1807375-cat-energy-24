@@ -12,12 +12,14 @@
   }
 
   &--optional-present {
+    position: relative;
+
     @media (min-width: @desktop-width) {
       display: flex;
       justify-content: space-between;
       gap: 79px;
-      position: relative;
-      margin-bottom: 86px;
+      margin: 0 auto 86px auto;
+      position: static;
     }
   }
 }

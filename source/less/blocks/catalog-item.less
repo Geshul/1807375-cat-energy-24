@@ -15,8 +15,8 @@
         height: 1px;
         background-color: @basic-light-grey;
         position: absolute;
-        left: -20px;
-        right: -20px;
+        left: 1px;
+        right: 1px;
         bottom: 0;
       }
     }
@@ -42,8 +42,8 @@
       height: 1px;
       background-color: @basic-light-grey;
       position: absolute;
-      left: -20px;
-      right: -20px;
+      left: 1px;
+      right: 1px;
       top: -19px;
     }
   }
@@ -156,6 +156,10 @@
   line-height: 16px;
   display: grid;
 
+  @media (max-width: @mobile-only-width) {
+    padding: 0 18px 0 0;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
   }
@@ -244,6 +248,8 @@
   &--small {
     @media (min-width: @tablet-width) {
       margin-top: -45px;
+      width: 163px;
+      height: 174px;
     }
 
     @media (min-width: @desktop-width) {
@@ -254,9 +260,14 @@
   &--big {
     @media (min-width: @tablet-width) {
       margin-top: -73px;
+      width: 168px;
+      height: 200px;
+
 
       @media (min-width: @desktop-width) {
         margin-top: -80px;
+        width: 172px;
+        height: 196px;
       }
     }
   }

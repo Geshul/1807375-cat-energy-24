@@ -4,55 +4,40 @@
   font-weight: 400;
   margin: 25px 0 36px 0;
   color: @basic-black;
-  position: relative;
-  width: 100%;
+  width: 248px;
+  background-color: @basic-white;
 
   &::before {
     content: "";
     height: 2px;
     background-color: @basic-green;
     position: absolute;
-    width: 53px;
-    right: -20px;
-    bottom: 7px;
+    left: 245px;
+    right: 0;
+    top: 42px;
+    z-index: -1;
 
     @media (min-width: @tablet-width) {
-      bottom: 12px;
-      width: 328px;
-      right: 0;
+      top: 25px;
+      left: 0;
     }
 
     @media (min-width: @desktop-width) {
-      width: 957px;
-      right: -110px;
+      top: 1518px;
     }
   }
 
   @media (min-width: @tablet-width) {
-    margin: 68px 0 80px 36px;
+    margin: 68px 0 80px 0;
     font-size: 36px;
     line-height: 1;
-
-    &::after {
-      content: "";
-      height: 2px;
-      background-color: @basic-green;
-      position: absolute;
-      width: 30px;
-      bottom: 12px;
-      left: -66px;
-
-      @media (min-width: @desktop-width) {
-        width: 70px;
-        left: -110px;
-      }
-    }
+    width: 338px;
+    padding: 0 36px 0 37px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 0;
-    margin: 0;
+    margin: 0 0 0 -40px;
+    padding: 0 35px 0 40px;
   }
 }
 
@@ -61,8 +46,13 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    outline: 1px solid @special-grey;
+  }
+
   @media (min-width: @desktop-width) {
-    margin: 142px 0 0 0;
+    margin: 81px 0 0 0;
+    outline: none;
   }
 }
 
@@ -96,19 +86,35 @@
     height: 1px;
     background-color: @special-grey;
     position: absolute;
-    left: 1px;
-    right: 1px;
+    left: 0;
+    right: 0;
     top: 0;
   }
 
   &:last-child::after {
-    content: "";
-    height: 1px;
-    background-color: @special-grey;
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    bottom: 0;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      height: 1px;
+      background-color: @special-grey;
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      bottom: 0;
+    }
+  }
+
+  &:first-child::before {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 1px;
+    }
   }
 
   @media (min-width: @tablet-width) {
