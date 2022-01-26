@@ -21,11 +21,11 @@
     padding: 0 20px;
 
     @media (min-width: @tablet-width) {
-      width: 630px;
+      padding: 0 67px 0 31px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 1220px;
+      padding: 0 110px 0 70px;
     }
   }
 }
@@ -55,11 +55,11 @@
     padding: 93px 0 37px 0;
 
     @media (min-width: @tablet-width) {
-      padding: 144px 0 54px 0;
+      padding: 144px 0 54px 40px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 187px 0 56px 0;
+      padding: 187px 0 56px 40px;
     }
   }
 
@@ -77,6 +77,12 @@
   text-transform: uppercase;
   color: @basic-black;
   margin: 0 0 39px 0;
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

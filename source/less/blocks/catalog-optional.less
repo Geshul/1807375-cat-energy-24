@@ -1,3 +1,11 @@
+.сatalog-optional {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    position: static;
+  }
+}
+
 .сatalog-optional__title {
   font-size: 24px;
   line-height: 24px;
@@ -18,12 +26,8 @@
     z-index: -1;
 
     @media (min-width: @tablet-width) {
-      top: 25px;
+      top: 23px;
       left: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: 1518px;
     }
   }
 
@@ -36,7 +40,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 0 -40px;
+    margin: 0;
     padding: 0 35px 0 40px;
   }
 }
@@ -51,7 +55,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 81px 0 0 0;
+    margin: 81px 0 0 40px;
     outline: none;
   }
 }

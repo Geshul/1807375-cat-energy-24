@@ -8,18 +8,22 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    min-width: 1220px;
   }
 
   &--optional-present {
-    position: relative;
+    @media (max-width: @mobile-only-width) {
+      justify-content: stretch;
+      justify-items: stretch;
+    }
 
     @media (min-width: @desktop-width) {
       display: flex;
       justify-content: space-between;
       gap: 79px;
       margin: 0 auto 86px auto;
-      position: static;
+      position: relative;
+      padding: 0 110px 0 70px;
     }
   }
 }
