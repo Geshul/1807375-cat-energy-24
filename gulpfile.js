@@ -98,6 +98,11 @@ const copy = (done) => {
   done();
 };
 
+const favicon =() => {
+  return gulp.src(['favicon.ico', 'manifest.webmanifest'])
+    .pipe(gulp.dest('build'))
+};
+
 // Clean
 
 const clean = () => {
@@ -139,7 +144,8 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
-    webp
+    webp,
+    favicon
   ),
 );
 
@@ -155,7 +161,8 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
-    webp
+    webp,
+    favicon
   ),
   gulp.series(
     server,

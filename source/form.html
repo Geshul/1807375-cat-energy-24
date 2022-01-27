@@ -21,9 +21,8 @@
         <picture>
           <source media="(min-width:1440px)" srcset="img/header/logo-full.svg" width="202" height="59">
           <source media="(min-width: 768px)" srcset="img/header/logo-almost-full.svg" width="174" height="52">
-          <img class="main-navigation__logo-icon main-navigation__logo-icon--picture" src="img/header/logo-picture.svg" width="34" height="38">
+          <img class="main-navigation__logo-icon main-navigation__logo-icon--picture" src="img/header/logo-picture.svg" width="191" height="38">
         </picture>
-        <img class="main-navigation__logo-icon main-navigation__logo-icon--word" src="img/header/logo-word.svg" width="101" height="18">
         <span class="visually-hidden">Логотип Кэт-энерджи.</span>
       </a>
       <button class="main-navigation__toggle" type="button">
@@ -48,7 +47,7 @@
   <main class="page-main">
     <div class="page-main__form-wrapper">
       <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__text page-main__text--form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="choice-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="choice-form__group-wrapper">
           <fieldset class="choice-form__group choice-form__group--data">
@@ -90,8 +89,8 @@
             </ul>
           </fieldset>
         </div>
+        <h2 class="choice-form__title choice-form__title--contacts">Контактные данные (владельца кота)</h2>
         <fieldset class="choice-form__group choice-form__group--contacts">
-          <legend class="choice-form__title">Контактные данные (владельца кота)</legend>
           <label class="choice-form__label">E-MAIL:*
             <input class="choice-form__input choice-form__input--contacts" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             <svg class="choice-form__input-icon choice-form__input-icon--email" width="20" height="15">
@@ -105,13 +104,12 @@
             </svg>
           </label>
         </fieldset>
-        <fieldset class="choice-form__group choice-form__group">
-          <legend class="choice-form__title choice-form__title--remark">Комментарий
-            <textarea class="choice-form__textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </legend>
+        <h2 class="choice-form__title choice-form__title--remark">Комментарий </h2>
+        <fieldset class="choice-form__group choice-form__group--remark">
+          <textarea class="choice-form__textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="choice-form__group">
-          <legend class="choice-form__title choice-form__title--about">Дополнительно</legend>
+        <h2 class="choice-form__title choice-form__title--about">Дополнительно</h2>
+        <fieldset class="choice-form__group choice-form__group--about">
           <ul class="choice-form__list choice-form__list--about">
             <li class="choice-form__item">
               <label class="choice-form__control">
