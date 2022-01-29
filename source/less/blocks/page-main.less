@@ -4,7 +4,6 @@
   position: relative;
 
   &__catalog-wrapper {
-    width: 100%;
     margin: 0 auto;
 
     @media (min-width: @tablet-width) {
@@ -25,6 +24,8 @@
     }
 
     @media (min-width: @desktop-width) {
+      display: grid;
+      justify-content: center;
       padding: 0 110px 0 70px;
     }
   }

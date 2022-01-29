@@ -23,8 +23,20 @@
   position: relative;
   display: grid;
 
+  &::after {
+    @media (max-width: @mobile-only-width) {
+      content: "";
+      height: 1px;
+      right: 20px;
+      left: 20px;
+      bottom: 57px;
+      position: absolute;
+      background-color: @special-light-grey;
+    }
+  }
+
   @media (max-width: @mobile-only-width) {
-    width: 280px;
+    width: 88%;
     justify-content: center;
   }
 
@@ -45,7 +57,7 @@
 .meal-plans__image-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 21px;
+  padding: 21px 0 0 20px;
   margin: 0 0 22px 0;
 
   &::after {
@@ -72,7 +84,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    grid-row: 1 / -1;
+    grid-row: 1 / 5;
     grid-column: 2 / 3;
     padding: 0;
     margin: auto 0 auto 54px;
@@ -80,6 +92,7 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / 2;
+    grid-row: 1 / -1;
     margin-bottom: 39px;
   }
 }
@@ -128,8 +141,6 @@
 .meal-plans__title {
   margin: 0;
   position: absolute;
-  left: 91px;
-  top: 30px;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
@@ -153,22 +164,10 @@
 
 .meal-plans__text {
   margin: 0;
-  width: 227px;
-  padding-bottom: 38px;
+  width: 81%;
+  padding: 0 33px 42px 20px;
   font-family: "Arial", "Helvetica", sans-serif;
   position: relative;
-
-  &::after {
-    @media (max-width: @mobile-only-width) {
-      content: "";
-      height: 1px;
-      right: -14px;
-      left: 1px;
-      bottom: 15px;
-      position: absolute;
-      background-color: @special-light-grey;
-    }
-  }
 
   @media (min-width: @tablet-width) {
     grid-row: 2 / 3;
@@ -176,7 +175,7 @@
     line-height: 24px;
     width: 340px;
     margin-left: 52px;
-    padding-bottom: 48px;
+    padding: 0 0 48px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -189,12 +188,16 @@
   text-decoration: none;
   padding-bottom: 18px;
   box-sizing: border-box;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   font-size: 16px;
   line-height: 1;
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: @mobile-only-width) {
+    padding-left: 20px;
   }
 
   @media (min-width: @tablet-width) {
@@ -233,5 +236,14 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 28px;
+  }
+}
+
+.meal-plans__title-wrapper {
+  @media (max-width: @mobile-only-width) {
+    position: relative;
+    left: 89px;
+    top: 30px;
+    width: 137px;
   }
 }

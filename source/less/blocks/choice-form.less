@@ -18,13 +18,7 @@
     z-index: -1;
 
     @media (min-width: @tablet-width) {
-      left: -71px;
-      right: -67px;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: -70px;
-      right: -110px;
+      display: none;
     }
   }
 
@@ -247,11 +241,26 @@
     font-size: 36px;
     line-height: 36px;
     padding-left: 40px;
-  }
+    position: static;
+    display: flex;
+    justify-content: center;
 
-  @media (min-width: @desktop-width) {
-    padding-right: 40px;
+    &::before {
+      content: "";
+      height: 2px;
+      background-color: @basic-green;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      vertical-align: center;
+      display: inline-block;
+    }
   }
+}
+
+@media (min-width: @desktop-width) {
+  padding-right: 40px;
 }
 
 
