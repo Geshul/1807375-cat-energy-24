@@ -197,9 +197,17 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: @tablet-width) {
+    gap: 49px;
+    transform: translateY(5px);
+    justify-content: flex-end;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 132px 44px;
+    justify-content: space-between;
+    transform: translateY(0);
   }
 }
 

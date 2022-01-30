@@ -41,7 +41,12 @@
   position: relative;
 
   &--catalog {
-    padding: 93px 0 60px 20px;
+    padding: 93px 0 39px 0;
+
+    @media (max-width: @mobile-only-width) {
+      margin: 0 auto;
+      width: 280px;
+    }
 
     @media (min-width: @tablet-width) {
       padding: 141px 0 163px 0;
@@ -56,7 +61,7 @@
     padding: 93px 0 37px 0;
 
     @media (min-width: @tablet-width) {
-      padding: 144px 0 54px 40px;
+      padding: 141px 0 54px 39px;
     }
 
     @media (min-width: @desktop-width) {
