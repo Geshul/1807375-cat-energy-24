@@ -42,13 +42,14 @@
     }
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 67px;
+      margin-bottom: 65px;
     }
 
     @media (min-width: @desktop-width) {
       display: grid;
       grid-template-columns: 569px 572px;
       gap: 78px;
+      margin-bottom: 67px;
     }
   }
 
@@ -227,7 +228,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-bottom: 57px;
+      padding-bottom: 52px;
     }
   }
 
@@ -254,8 +255,8 @@
       left: 0;
       right: 0;
       z-index: -1;
-      vertical-align: center;
       display: inline-block;
+      transform: translateY(5px);
     }
   }
 }
@@ -283,7 +284,7 @@
     @media (min-width: @desktop-width) {
       display: grid;
       grid-template-columns: 221px 221px 221px 221px;
-      gap: 105px;
+      gap: 104px;
     }
   }
 
@@ -308,13 +309,13 @@
     grid-template-columns: 282px 1fr;
     align-items: center;
     gap: 61px;
-    margin: 57px 0 72px 40px;
+    margin: 60px 0 72px 40px;
     font-size: 20px;
     line-height: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 61px 0 82px 40px;
+    margin: 66px 0 82px 40px;
     grid-template-columns: 568px 1fr;
     gap: 82px;
   }
@@ -367,7 +368,7 @@
 }
 
 .choice-form__textarea {
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 37px 0 23px 0;
   padding: 9px 12px 0 15px;
   text-transform: uppercase;
@@ -405,6 +406,10 @@
     text-align: left;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
   }
 }
 
@@ -550,7 +555,7 @@
   background-color: @basic-green;
   text-transform: uppercase;
   border: none;
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   cursor: pointer;
   margin: 15px 0 21px 0;
 
@@ -567,6 +572,8 @@
     margin: 0;
     height: 54px;
     width: 282px;
+    font-size: 20px;
+    line-height: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -579,7 +586,7 @@
   font-size: 14px;
   line-height: 16px;
   color: @basic-black;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0 0 32px 0;
   text-align: center;
 
