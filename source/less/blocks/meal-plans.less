@@ -2,7 +2,7 @@
   list-style-type: none;
   padding: 0;
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 32px 0 20px 0;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 45px 0;
@@ -193,6 +193,14 @@
   font-size: 16px;
   line-height: 1;
 
+  &:hover .meal-plans__link-text {
+    background-image: url("../img/index/meal-plans/arrow-icon-tall.svg");
+  }
+
+  &:active .meal-plans__link-text {
+    background-image: url("../img/index/meal-plans/arrow-icon-tall.svg");
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -221,14 +229,6 @@
   background-image: url("../img/index/meal-plans/arrow-icon.svg");
   background-repeat: no-repeat;
   background-position: 100px;
-
-  .meal-plans__link:hover & {
-    background-image: url("../img/index/meal-plans/arrow-icon-tall.svg");
-  }
-
-  .meal-plans__link:active & {
-    background-image: url("../img/index/meal-plans/arrow-icon-tall.svg");
-  }
 
   @media (min-width: @tablet-width) {
     margin-right: 25px;

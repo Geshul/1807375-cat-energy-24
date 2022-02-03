@@ -34,10 +34,6 @@
   width: 100%;
   display: block;
   margin: 0;
-
-  @media (min-width: @desktop-width) {
-    min-width: @desktop-width;
-  }
 }
 
 .partnership__title {
@@ -89,5 +85,32 @@
 
   @media (min-width: @tablet-width) {
     height: 400px;
+  }
+}
+
+.partnership__map {
+  background-image: url("../img/index/partnership/location-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/partnership/location-image@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/index/partnership/location-image-large.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/partnership/location-image-large@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index/partnership/location-image-largest.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/partnership/location-image-largest@2x.png");
+    }
   }
 }

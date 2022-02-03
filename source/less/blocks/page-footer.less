@@ -62,6 +62,10 @@
   justify-content: space-between;
   align-items: center;
 
+  &:hover .page-footer__about-icon {
+    fill: @basic-green;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -93,10 +97,6 @@
     fill: @basic-green;
   }
 
-  .page-footer__social-link:active & {
-    opacity: 0.3;
-  }
-
   .page-footer__social-link:hover &--facebook {
     stroke: @basic-green;
   }
@@ -116,12 +116,14 @@
   }
 }
 
+.page-footer__social-link {
+  &:active .page-footer__social-icon {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__about-icon {
   fill: @dark-grey;
-
-  .page-footer__about-link:hover & {
-    fill: @basic-green;
-  }
 }
 
 .page-footer__about-text {

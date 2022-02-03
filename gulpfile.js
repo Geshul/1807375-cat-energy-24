@@ -109,7 +109,6 @@ const clean = () => {
   return del('build');
 };
 
-
 // Server
 
 const server = (done) => {

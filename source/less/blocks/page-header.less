@@ -10,6 +10,12 @@
     }
   }
 
+  &--nojs {
+    @media (max-width: @mobile-only-width) {
+      position: static;
+    }
+  }
+
   @media (max-width: @mobile-only-width) {
     &::before {
       content: "";

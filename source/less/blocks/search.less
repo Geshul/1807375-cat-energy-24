@@ -13,7 +13,7 @@
 }
 
 .search__title {
-  width: 249px;
+  min-width: 249px;
   font-size: 36px;
   line-height: 36px;
   padding: 91px 0 26px 0;
@@ -39,34 +39,17 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  padding-bottom: 23px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: max-content;
-    padding-bottom: 20px;
+    text-align: left;
+    padding-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 59px;
-  }
-}
-
-.search__background-wrapper {
-  text-align: center;
-  background-color: @special-green-light;
-  z-index: 1;
-  height: 100%;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    background-color: @special-green-light;
+    padding-bottom: 52px;
   }
 }
 
@@ -80,12 +63,18 @@
   top: 65px;
   z-index: -1;
 
+  &::before {
+    content: "";
+    background-color: @special-green-light;
+    display: block;
+    height: 100%;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/search/background-cat-image@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
-    background-image: none;
     display: none;
   }
 
@@ -116,7 +105,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 224px 0 0 80px;
-    z-index: -1;
   }
 }
 
@@ -143,27 +131,35 @@
     opacity: 0.3;
   }
 
+  @media (max-width: @mobile-only-width) {
+    transform: translateY(303px);
+  }
+
   @media (min-width: @tablet-width) {
     width: 244px;
     height: 54px;
-    margin: -580px 0 0 89px;
+    margin: 0;
     font-size: 20px;
     line-height: 1;
   }
 
   @media (min-width: @desktop-width) {
-    margin: -185px 0 0 80px;
+    margin: 0;
   }
 }
 
 .search__image {
   display: block;
-  margin: 8px auto 0 auto;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-only-width) {
+    transform: translateY(-31px);
+  }
 
   @media (min-width: @tablet-width) {
     z-index: -1;
     order: 1;
-    margin: 0;
+    margin-top: -84px;
     width: 709px;
     height: 609px;
   }

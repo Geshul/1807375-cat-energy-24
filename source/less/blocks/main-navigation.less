@@ -4,6 +4,21 @@
   width: 88%;
   margin: 0 auto;
 
+  &--closed .main-navigation__list {
+    @media (max-width: @mobile-only-width) {
+      display: none;
+    }
+  }
+
+  &--opened .main-navigation__toggle {
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/header/button-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(1px, -2px);
+  }
+
   @media (min-width: @tablet-width) {
     padding: 24px 0 0 0;
     min-width: 709px;
@@ -24,9 +39,9 @@
   background-color: @basic-white;
   z-index: 2;
 
-  .main-navigation--closed & {
-    @media (max-width: @mobile-only-width) {
-      display: none;
+  &--black .main-navigation__link {
+    @media (min-width: @desktop-width) {
+      color: @basic-black;
     }
   }
 
@@ -60,6 +75,19 @@
 
   &:last-child {
     margin-right: 0;
+
+    @media (max-width: @mobile-only-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: @basic-grey;
+        width: 100%;
+      }
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -82,7 +110,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 66px;
+      bottom: 67px;
       height: 1px;
       background-color: @basic-grey;
       width: 100%;
@@ -127,12 +155,6 @@
     pointer-events: none;
   }
 
-  .main-navigation__list--black & {
-    @media (min-width: @desktop-width) {
-      color: @basic-black;
-    }
-  }
-
   .main-navigation__list--black &--current::before {
     border-color: @basic-green;
   }
@@ -149,15 +171,6 @@
   z-index: 2;
   cursor: pointer;
   transform: translate(5px, -2px);
-
-  .main-navigation--opened & {
-    width: 28px;
-    height: 28px;
-    background-image: url("../img/header/button-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translate(1px, -2px);
-  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -206,4 +219,27 @@
 
 .main-navigation--opened .main-navigation__icon {
   display: none;
+}
+
+.main-navigation--nojs {
+  @media (max-width: @mobile-only-width) {
+    display: block;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__logo {
+  margin-left: 20px;
+}
+
+.main-navigation--nojs .main-navigation__list {
+  @media (max-width: @mobile-only-width) {
+    position: relative;
+    margin-top: -65px;
+  }
 }
